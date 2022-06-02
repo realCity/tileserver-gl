@@ -24,10 +24,6 @@ const utils = require('./utils');
 
 let serve_rendered = null;
 const isLight = packageJson.name.slice(-6) === '-light';
-if (!isLight) {
-  // do not require `serve_rendered` in the light package
-  serve_rendered = require('./serve_rendered');
-}
 
 function start(opts) {
   console.log('Starting server');

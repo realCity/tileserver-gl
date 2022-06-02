@@ -1,4 +1,4 @@
-FROM node:10-buster AS builder
+FROM node:16-buster AS builder
 
 RUN export DEBIAN_FRONTEND=noninteractive \
   && apt-get -qq update \
